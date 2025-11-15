@@ -11,10 +11,14 @@ const router = createBrowserRouter([
   {
     path: '/',
     children: [
-      {index: true,Component: Home},
-      {path: '/home', Component: Home},
-      {path: '/gallery', Component: Gallery},
-      {path: '/cards/:id', Component: Cards}
+      { index: true, Component: Home },
+      { path: '/home', Component: Home },
+      { path: '/gallery', Component: Gallery },
+      {
+        path: '/cards/:id',
+        loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/category/${params.id}`),
+        Component: Cards
+      }
     ],
     Component: App
   }

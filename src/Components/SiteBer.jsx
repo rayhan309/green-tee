@@ -12,11 +12,12 @@ const SiteBer = ({ dataPromiss }) => {
 
     return (
         <div>
+            <h2 className="text-xl font-semibold mb-3">Categories</h2>
             <NavLink to='/home'><button className="bg-[#15803D] text-white font-semibold btn py-2 px-3 w-full mb-2">All Tree</button></NavLink>
          {/* <NavLink className="mb-2 btn py-2 px-3 w-full">{category.category_name}</NavLink> */}
             {
                 data.categories.map(category =>
-                    <button onClick={() => navigate(`/cards/${category.id}`)} key={category.id}  className='bg-[#15803D] btn py-2 mb-2 px-3 w-full text-white font-semibold'>
+                    <button onClick={() => navigate(`/cards/${category.id}`)} key={category.id}  className='btn py-2 mb-2 px-3 w-full font-semibold'>
                         {category.category_name}
                     </button>
                 )

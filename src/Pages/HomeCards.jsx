@@ -7,7 +7,7 @@ const HomeCards = ({ dataPromiss }) => {
         <>
             {
                 allPlants.plants.map(plant =>
-                    <div key={plant.id} className="p-3 shadow-xl rounded-xl hover:bg-gray-300 bg-white bg-gray-200">
+                    <div key={plant.id} className="p-3 shadow-xl rounded-xl hover:bg-gray-200 bg-white">
                         <img className="h-68 w-full object-cover rounded-lg" src={plant.image} alt="froites" />
                         <h2 className="font-semibold mt-1.5">{plant.name}</h2>
                         <p className="text-[14px] font-normal text-gray-500 mt-2.5">{plant.description}</p>
