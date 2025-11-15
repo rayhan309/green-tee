@@ -1,9 +1,15 @@
-import { TableOfContents, X } from "lucide-react";
-import { useState } from "react";
+import { ShoppingCart, TableOfContents, X } from "lucide-react";
+import { use, useState } from "react";
 import { Link } from "react-router";
+import { CardsData } from "../App";
 
 const Navber = () => {
 
+    // add data sheare 
+    const { addData } = use(CardsData)
+    // console.log(addData)
+
+    // menu state
     const [open, setOpen] = useState(false)
 
     return (
@@ -29,6 +35,9 @@ const Navber = () => {
                         <li className="text-white font-medium"><Link to="/about">About</Link></li>
                         <li className="text-white font-medium"><Link to="/gallery">Gallery</Link></li>
                         <li className="text-white font-medium"><Link to="/Plant a Tree">Plant a Tree</Link></li>
+                        <li className="text-white font-medium"><Link to="/addCards">
+                            <div className="absolute"><ShoppingCart /><span className="relative top-[-35px] -right-5">{addData.length}</span></div>
+                        </Link></li>
                     </ul>
                 </div>
 

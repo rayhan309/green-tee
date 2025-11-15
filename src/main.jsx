@@ -7,6 +7,7 @@ import Home from './Pages/Home.jsx'
 import Gallery from './Pages/Gallery.jsx';
 import Cards from './Components/Cards.jsx';
 import About from './Components/About.jsx';
+import AddCards from './Components/AddCards.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
         loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/category/${params.id}`),
         Component: Cards
       },
-      { path: '/about', Component: About }
+      { path: '/about', Component: About },
+      {
+        path: '/addCards',
+        Component: AddCards
+      }
     ],
     Component: App
   }
