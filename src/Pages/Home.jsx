@@ -1,7 +1,9 @@
 // import { useLoaderData, useLocation } from 'react-router';
 
+import { Sidebar } from "lucide-react";
 import HomeCards from "./HomeCards";
 
+// all plants data fetch
 const dataPromiss = fetch('https://openapi.programming-hero.com/api/plants').then(res => res.json());
 
 const Page = () => {

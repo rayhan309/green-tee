@@ -26,7 +26,7 @@ const HomeCards = ({ dataPromiss }) => {
                             <p className="py-1 px-3 flex items-center gap-2 rounded-2xl text-[#15803D] bg-[#DCFCE7]">{plant.category}</p>
                             <p className="text-lg mr-3.5 font-semibold ">${plant.price}</p>
                         </div>
-                        <button onClick={() => addHandler(plant)} className="text-white cursor-pointer mt-5 mb-2 bg-[#15803D] py-[8px] rounded-3xl px-3 w-full font-medium">Add to Card</button>
+                        <button onClick={() => addHandler(plant)} className="text-white btns mt-5 mb-2 bg-[#15803D] py-[8px] rounded-xl px-3 w-full font-medium">Add to Card</button>
                     </div>
                 )
             }

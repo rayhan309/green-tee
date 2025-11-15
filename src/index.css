@@ -2,17 +2,33 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-a.active {
-    background-color: #15803D;
-    color: white;
+.active {
+    color: #facc15;
 }
+
+.activ {
+    background-color: #facc15;
+}
+
+.none {
+    background-color: #15803d;
+}
+
 body {
     background-color: rgb(237, 237, 237);
     font-family: "Inter", sans-serif;
 }
-/* a .notActive {
-    /* className="mb-2 btn py-2 px-3 w-full" */
-    /* margin-bottom: 8px;
-    padding: 8px 12px 8px 12px;
 
-}*/
+.btns:hover {
+    position: relative;
+    background: #15803d;
+    border-radius: 24px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 1em;
+    transition: 0.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+}

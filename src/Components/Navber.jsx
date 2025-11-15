@@ -1,6 +1,6 @@
 import { ShoppingCart, TableOfContents, X } from "lucide-react";
 import { use, useState } from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { CardsData } from "../App";
 
 const Navber = () => {
@@ -31,13 +31,13 @@ const Navber = () => {
 
                 <div className="hidden md:block">
                     <ul className="flex gap-5">
-                        <li className="text-white font-medium"><Link to="/home">Home</Link></li>
-                        <li className="text-white font-medium"><Link to="/about">About</Link></li>
-                        <li className="text-white font-medium"><Link to="/gallery">Gallery</Link></li>
-                        <li className="text-white font-medium"><Link to="/Plant a Tree">Plant a Tree</Link></li>
-                        <li className="text-white font-medium"><Link to="/addCards">
+                        <li className="text-white font-medium"><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/home">Home</NavLink></li>
+                        <li className="text-white font-medium"><NavLink to="/about">About</NavLink></li>
+                        <li className="text-white font-medium"><NavLink to="/gallery">Gallery</NavLink></li>
+                        <li className="text-white font-medium"><NavLink to="/plants">Plant a Tree</NavLink></li>
+                        <li className="text-white font-medium"><NavLink to="/addCards">
                             <div className="absolute"><ShoppingCart /><span className="relative top-[-35px] -right-5">{addData.length}</span></div>
-                        </Link></li>
+                        </NavLink></li>
                     </ul>
                 </div>
 

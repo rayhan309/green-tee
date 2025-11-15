@@ -8,6 +8,7 @@ import Gallery from './Pages/Gallery.jsx';
 import Cards from './Components/Cards.jsx';
 import About from './Components/About.jsx';
 import AddCards from './Components/AddCards.jsx';
+import PlantsTree from './Pages/PlantsTree.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,10 +26,14 @@ const router = createBrowserRouter([
       {
         path: '/addCards',
         Component: AddCards
+      },
+      {
+        path: '/plants',
+        Component: PlantsTree
       }
     ],
     Component: App
-  }
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(
