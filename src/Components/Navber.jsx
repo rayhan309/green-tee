@@ -1,5 +1,6 @@
 import { TableOfContents, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router";
 
 const Navber = () => {
 
@@ -16,16 +17,18 @@ const Navber = () => {
                 </span>
 
                 <ul className={`absolute -top-40 bg-[#0ec050] p-2 duration-1000 rounded-md z-40 md:hidden ${open && 'top-14'}`}>
-                    <li className="text-white mt-2 font-normal"><a href="/About">About</a></li>
-                    <li className="text-white mt-2 font-normal"><a href="/Gallery">Gallery</a></li>
-                    <li className="text-white mt-2 font-normal"><a href="/contact">Plant a Tree</a></li>
+                    <li className="text-white mt-2 font-normal"><Link to="/about">About</Link></li>
+                    <li className="text-white font-medium"><Link to="/home">Home</Link></li>
+                    <li className="text-white mt-2 font-normal"><Link to="/Gallery">Gallery</Link></li>
+                    <li className="text-white mt-2 font-normal"><Link to="/contact">Plant a Tree</Link></li>
                 </ul>
 
                 <div className="hidden md:block">
                     <ul className="flex gap-5">
-                        <li className="text-white font-medium"><a href="/home">Home</a></li>
-                        <li className="text-white font-medium"><a href="/gallery">Gallery</a></li>
-                        <li className="text-white font-medium"><a href="/Plant a Tree">Plant a Tree</a></li>
+                        <li className="text-white font-medium"><Link to="/home">Home</Link></li>
+                        <li className="text-white font-medium"><Link to="/about">About</Link></li>
+                        <li className="text-white font-medium"><Link to="/gallery">Gallery</Link></li>
+                        <li className="text-white font-medium"><Link to="/Plant a Tree">Plant a Tree</Link></li>
                     </ul>
                 </div>
 

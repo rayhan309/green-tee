@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 import Home from './Pages/Home.jsx'
 import Gallery from './Pages/Gallery.jsx';
 import Cards from './Components/Cards.jsx';
+import About from './Components/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,9 +17,10 @@ const router = createBrowserRouter([
       { path: '/gallery', Component: Gallery },
       {
         path: '/cards/:id',
-        loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/category/${params.id}`),
+        loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/category/${params.id}`),
         Component: Cards
-      }
+      },
+      { path: '/about', Component: About }
     ],
     Component: App
   }

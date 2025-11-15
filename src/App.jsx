@@ -4,6 +4,9 @@ import Banner from './Components/Banner'
 import Footer from './Components/Footer'
 import Navber from './Components/Navber'
 import SiteBer from './Components/SiteBer'
+import About from './Components/About'
+import Impact from './Components/Impact'
+import { ToastContainer } from 'react-toastify';
 
 const dataPromiss = fetch("https://openapi.programming-hero.com/api/categories").then(res => res.json())
 
@@ -17,7 +20,10 @@ function App() {
         <div className='col-span-12 md:col-span-2 max-h-[580px] bg-white rounded-lg shadow-2xl p-2'><SiteBer dataPromiss={dataPromiss}></SiteBer></div>
         <div className='col-span-12 md:col-span-10'><Outlet></Outlet></div>
       </div>
+      <About></About>
+      <Impact></Impact>
       <Footer></Footer>
+      <ToastContainer />
     </>
   )
 }
