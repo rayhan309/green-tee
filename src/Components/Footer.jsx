@@ -6,9 +6,9 @@ const Footer = () => {
     }
 
     return (
-        <div className="bg-[#15803D] p-10">
+        <div className="bg-[#15803D] p-10 mt-10">
             <form onSubmit={submitHandler} className="bg-[#15803D50] shadow-2xl max-w-[550px] mx-auto px-5 py-3 rounded-xl">
-            <h2 className=" text-3xl font-semibold text-white text-center mb-5">Plant a Tree Today</h2>
+            <h2 className=" text-xl md:text-3xl font-semibold text-white text-center mb-5">Plant a Tree Today</h2>
                 <input className="w-full rounded-4xl mb-3 bg-white h-[36px]" type="text" name="name" />
                 <br />
                 <input className="w-full rounded-4xl mb-3 bg-white h-[36px]" type="email" name="email" />

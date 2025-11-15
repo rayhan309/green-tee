@@ -23,8 +23,8 @@ const Navber = () => {
 
                 <div className="hidden md:block">
                     <ul className="flex gap-5">
-                        <li className="text-white font-medium"><a href="/About">About</a></li>
-                        <li className="text-white font-medium"><a href="/Gallery">Gallery</a></li>
+                        <li className="text-white font-medium"><a href="/home">Home</a></li>
+                        <li className="text-white font-medium"><a href="/gallery">Gallery</a></li>
                         <li className="text-white font-medium"><a href="/Plant a Tree">Plant a Tree</a></li>
                     </ul>
                 </div>

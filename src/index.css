@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+a.active {
+    background-color: #15803D;
+    color: white;
+}
+/* a .notActive {
+    /* className="mb-2 btn py-2 px-3 w-full" */
+    /* margin-bottom: 8px;
+    padding: 8px 12px 8px 12px;
+
+} */
