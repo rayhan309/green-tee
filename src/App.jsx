@@ -8,9 +8,7 @@ import About from './Components/About'
 import Impact from './Components/Impact'
 import { ToastContainer } from 'react-toastify';
 import { createContext, useState } from 'react';
-// import { CardsData } from './Provaiders/Provaiders'
-// import { CardsData } from './Provaiders/Provaiders'
-
+ 
 const dataPromiss = fetch("https://openapi.programming-hero.com/api/categories").then(res => res.json())
 
 export const CardsData = createContext({})
